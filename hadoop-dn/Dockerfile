@@ -1,6 +1,6 @@
-FROM alvinhenrick/hadoop-base
+FROM yiwei1012/ubuntu-hadoop:1.0
 
-MAINTAINER Alvin Henrick
+MAINTAINER YIWEI CHEN <feberium@gmail.com>
 
 RUN apt-get install -y iputils-ping daemontools
 
