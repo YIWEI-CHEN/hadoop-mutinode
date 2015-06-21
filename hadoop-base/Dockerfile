@@ -31,6 +31,7 @@ RUN su hduser -c "ssh-keygen -t rsa -f ~/.ssh/id_rsa -P ''"
 RUN su hduser -c "cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys" 
 ADD config/ssh_config ./ssh_config
 RUN mv ./ssh_config /home/hduser/.ssh/config
+RUN chown hduser:hadoop /home/hduser/.ssh/config
 
 #RUN wget http://apache.mirror.anlx.net/hadoop/core/hadoop-2.3.0/hadoop-2.3.0-src.tar.gz 
 RUN wget http://ftp.mirror.tw/pub/apache/hadoop/common/hadoop-2.6.0/hadoop-2.6.0-src.tar.gz

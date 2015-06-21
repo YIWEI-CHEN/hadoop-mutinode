@@ -16,6 +16,10 @@
         <name>dfs.replication</name>
         <value>2</value>
   </property>
+    <property>
+        <name>dfs.blocksize</name>
+        <value>268435456</value>
+    </property>
   
    <property>
      <name>dfs.permissions</name>

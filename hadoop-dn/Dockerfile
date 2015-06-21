@@ -22,6 +22,7 @@ ADD config/mapred-site.xml $HADOOP_INSTALL/etc/hadoop/mapred-site.xml
 ADD config/yarn-site.xml $HADOOP_INSTALL/etc/hadoop/yarn-site.xml 
 
 RUN chown -R hduser:hadoop $HADOOP_INSTALL/logs
+RUN chown -R hduser:hadoop /home/hduser/.ssh/config
 
 # SSH and SERF ports
 EXPOSE 22 7373 7946 

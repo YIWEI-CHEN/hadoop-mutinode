@@ -20,4 +20,43 @@
   <name>yarn.resourcemanager.address</name>
   <value>master.mycorp.kom:8040</value>
 </property>
+<property>
+    <name>yarn.nodemanager.address</name>
+    <value>master:8050</value>
+</property>
+<property>
+    <name>yarn.nodemanager.localizer.address</name>
+    <value>master:8060</value>
+</property>
+  <property>
+    <name>yarn.nodemanager.resource.memory-mb</name>
+    <value>8192</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.minimum-allocation-mb</name>
+    <value>4096</value>
+  </property>
+  <property>
+    <name>yarn.nodemanager.vmem-pmem-ratio</name>
+    <value>100</value>
+  </property>
+  <!-- container cpu usage limitation -->
+  <property>
+    <name>yarn.nodemanager.resource.cpu-vcores</name>
+    <value>4</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.minimum-allocation-vcores</name>
+    <value>1</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.maximum-allocation-vcores</name>
+    <value>1</value> 
+  </property>
+  <!-- container gpu usage limitation -->
+  <!--property>
+    <name>yarn.nodemanager.resource.gpu-vgpus</name>
+    <value>80</value>
+  </property-->
+ 
 </configuration>

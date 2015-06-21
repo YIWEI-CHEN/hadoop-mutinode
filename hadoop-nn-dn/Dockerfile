@@ -30,6 +30,7 @@ RUN chown -R hduser:hadoop /home/hduser/hdfs/namenode
 RUN chown -R hduser:hadoop /home/hduser/hdfs/datanode
 RUN chown -R hduser:hadoop $HADOOP_INSTALL/logs
 RUN chmod 1777 /tmp
+RUN chown -R hduser:hadoop /home/hduser/.ssh/config
 
 # Format namenode
 RUN su hduser -c "/usr/local/hadoop/bin/hdfs namenode -format"

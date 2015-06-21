@@ -27,3 +27,6 @@ build/
 
 dependency-reduced-pom.xml
 README.html
+
+# tmp Files
+*.swp
